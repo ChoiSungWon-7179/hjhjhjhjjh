@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Guitar With - Favorite</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+    span img {
+        border-radius: 50%;
+    }
+
+    #services {
+        background-color:#0c0c0ce3;
+    }
+    #services .section-heading, .service-heading {
+        color:#8b7356f3;
+    }    
+    #services .text-muted {
+        color:whitesmoke;
+    }
+
+    #portfolio {
+        background-color:rgba(0, 0, 0, 0.8);
+    }
+    #portfolio .section-heading {
+        color: whitesmoke;
+    }
+
+    #about {
+        background-color:#444444;
+        color: #bbbbbb;
+    }
+    #about .section-subheading {
+        color: seashell;
+    }
+    .timeline-body > p {
+        color: seashell
+    }
+
+    #team {
+        background-color: #666666;
+    }
+    #team .text-muted, .large{
+        color: seashell;
+    }
+
+    #red {
+        text-align: left;
+        color:red;
+    }
+    #orange {
+        text-align: left;
+        color:orange;
+    }
+    #yellow {
+        text-align: left;
+        color:yellow;
+    }
+    #green {
+        text-align: left;
+        color:yellowgreen;
+    }
+    #blue {
+        text-align: left;
+        color:blue;
+    }
+    #pink {
+        text-align: left;
+        color:pink;
+    }
+
+    .sung {
+        background-color:rgba(0, 0, 0, 0.8);
+    }
+
+    #wrap {
+        width: 750px;
+        margin: auto;    
+    }
+    .modal-body #choi {
+        text-align:left;
+        margin-left: auto;
+    }
+
+    .modal-body h2, p, strong {
+        color: whitesmoke;
+    }
+
+    .rp {
+        margin-left: -0.7em;
+    }
+    .rp:nth-child(2n) {color: red;}
+    .rp:nth-child(2n-1) {color:pink;}
+
+    summary {
+        color: gold;
+        text-align: left;
+        font-size: 2em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: auto;
+    }
+    summary:hover {
+        color: white;
+        text-shadow: 0px 0px 9px gold;
+        text-align: left;
+        font-size: 2.1em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-left: auto;
+    }
+
+    #guitarlink {
+        color: deepskyblue;
+        font-size: 1.2em;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    #guitarlink:hover {
+        color: white;
+        text-shadow: 0px 0px 9px deepskyblue;
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+
+    .nav > li > a:hover {
+        color:#fed136;
+        text-shadow: 0px 0px 9px white;
+        font-size: 1.05em;
+    }
+
+    .navbar-header > a:hover {
+        color:#fed136;
+        text-shadow: 0px 0px 9px white;
+        font-size: 2.1em;
+    }
+
+    .list-inline li #sw1 {
+        background-color: skyblue;
+    }
+    .list-inline li #sw2 {
+        background-color: midnightblue;
+    }
+    .list-inline li #sw3 {
+        background-image: linear-gradient(225deg,fuchsia,pink,orange);
+    }
+
+    .list-inline li > #sw4 {
+        background-color: red;
+        position:relative;
+        top: 1px;
+        z-index: 10;
+        text-decoration: none;
+    }
+    .list-inline li > a > #sw5 {
+        color: whitesmoke;
+        font-size: 1.1em;
+        position:relative;
+        top: -2px;
+        left: 3px;
+    }
+
+
+    .list-inline li #sw1:hover {
+        background-color:#99ffff;
+        text-shadow: 0px 0px 9px blue;
+    }
+    .list-inline li #sw2:hover {
+        background-color:#99ccff;
+        text-shadow: 0px 0px 9px #cc0066;
+    }
+    .list-inline li #sw3:hover {
+        text-shadow: 0px 0px 9px white;
+    }
+    .list-inline li > #sw4:hover {
+        background-color: #ff6600;
+    }
+    #sw5:hover {
+        text-shadow: 0px 0px 9px yellow;
+    }
+    
+    #color1 {
+	display:inline-block;
+    background:url('img/logos-choisungwon/1.jpg') no-repeat;
+    width: 200px; height: 200px;
+    position: relative;
+    top: 45px;
+}
+    #color1:hover{
+    background:url('img/logos-choisungwon/5.jpg') no-repeat;
+}
+    #color2 {
+	display:inline-block;
+    background:url('img/logos-choisungwon/2.jpg') no-repeat;
+    width: 200px; height: 200px;
+    position: relative;
+    top: 45px;
+}
+    #color2:hover{
+    background:url('img/logos-choisungwon/6.jpg') no-repeat;
+}
+    #color3 {
+	display:inline-block;
+    background:url('img/logos-choisungwon/3.jpg') no-repeat;
+    width: 200px; height: 200px;
+    position: relative;
+    top: 45px;
+}
+    #color3:hover{
+    background:url('img/logos-choisungwon/7.jpg') no-repeat;
+}
+    #color4 {
+	display:inline-block;
+    background:url('img/logos-choisungwon/4.jpg') no-repeat;
+    width: 200px; height: 200px;
+    position: relative;
+    top: 45px;
+}
+    #color4:hover{
+    background:url('img/logos-choisungwon/8.jpg') no-repeat;
+}
+
+    #contact .section-subheading {
+        color: gold;
+    }
+
+
+</style>
+    <!-- span태그에 img를 쓰면 원형 이미지 -->
+
+    <!-- My Intro탭 배경색 -->
+    <!-- My Intro탭 글자색 -->
+    <!-- My Intro탭 글자색-설명글 -->
+    
+    <!-- Guitar탭 배경색 -->
+    <!-- Guitar탭 대제목-글자색 -->
+    
+    <!-- Step탭 배경색 -->
+    <!-- Step탭 설명글-글자색 -->
+    <!-- Step탭 소제목-글자색 -->
+
+    <!-- Guitarlist탭 배경색 -->
+    <!-- Guitarlist탭 글자색 -->
+
+    <!-- Guitar탭 앰프메뉴 소제목-글자색-빨주노초파분 -->
+    <!-- Guitar탭 모든메뉴 배경색 -->
+    <!-- Guitar탭 모든메뉴 가로750 센터에오는 텍스트가 들어설 투명공간 -->
+    <!-- Guitar탭 모든메뉴 글자-왼쪽에 붙어서 -->
+    <!-- Guitar탭 모든메뉴 글자색 -->
+    <!-- Guitar탭 모든메뉴 글자가붙고-짝수빨강&홀수분홍-하트에 사용 -->
+    <!-- Guitar탭 모든메뉴 설명글-접기&펼치기-글자색,왼쪽붙어서,글자크기,위아래공간 -->
+    <!-- Guitar탭 모든메뉴 설명글-hover로-빛나는것처럼 -->
+    <!-- Guitar탭 입문곡메뉴 다운로드-글자색,글자크기,이탈릭 -->
+    <!-- Guitar탭 입문곡메뉴 다운로드-hover로-빛나는것처럼,밑줄제거 -->
+
+    <!-- 오른쪽 상단메뉴-hover로-빛나는것처럼 -->
+    <!-- GuitarWith(Home)탭-hover로 빛나는것처럼 -->
+
+    <!-- Guitarlist탭 SNS링크-twitter색상 -->
+    <!-- Guitarlist탭 SNS링크-facebook색상 -->
+    <!-- Guitarlist탭 SNS링크-instagram색상-bg img그라데이션 -->
+    <!-- Guitarlist탭 SNS링크-youtube색상-빨간원 -->
+    <!-- Guitarlist탭 SNS링크-youtube색상-흰삼각형 -->
+
+    <!-- Guitarlist탭 SNS링크-twitter hover로-빛나는것처럼 -->
+    <!-- Guitarlist탭 SNS링크-facebook hover로-빛나는것처럼 -->
+    <!-- Guitarlist탭 SNS링크-instagram hover로-빛나는것처럼 -->
+    <!-- Guitarlist탭 SNS링크-youtube hover로-빛나는것처럼 -->
+    <!-- Guitarlist탭 SNS링크-youtube hover로-빛나는것처럼     -->
+    <!-- 로고 평상시off 마우스 접근하면 on -->
+
+    <!-- 문의사항 소제목 글자색 -->
+    <!-- Contact탭 백그라운드이미지 코딩은 agency.css에 있음 -->
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Guitar With</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">My Intro</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Guitar</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Step</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Guitarist</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome and nice to meet you!</div>
+                <div class="intro-heading">Guitar치는 취미를 가져보세요!</div>
+                <a href="#services" class="page-scroll btn btn-xl">Click - Scroll Down</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <!-- 최성원 소개 하는 페이지 -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">My introduction</h2>
+                    <h3 class="section-subheading text-muted">기말 피비 썸머</h3>
+                </div>
+            </div>
+            <!--                                                        -->
+            <!-- 크래프터 글로리아 기타 사진 -->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="1a.png" alt="1a img" width="100" height="100">
+                    </span>
+                    <h4 class="service-heading">Crafter - GLORIA</h4>
+                    <p class="text-muted">국산 Crafter사의 글로리아 제품으로 40~60만원 대로 구매할 수 있고 점보 컷어웨이 바디 형태와 eq가 장착되어 있어 앰프 사용이 가능하다. 현재도 사용하고 있으며 따뜻하면서도 풍성한 소리를 들려준다.</p>
+                </div>
+                <!--                                          -->
+                <!-- 내 기타연주 유튜브 영상 -->
+                <div class="col-md-4">
+                    <div>
+                        <iframe width="230" height="110" src="https://youtube.com/shorts/GSwl8jKcfmQ?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="service-heading">메이플스토리BGM - 에레브</h4>
+                    <p class="text-muted">제가 연주한 유튜브 영상과 녹음한
+                        <h4 class="service-heading">마사키키시베-Hana 입니다.</h4>
+                    <audio controls="controls">
+                        <source src="audio/마사키키시베-Hana.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                <!--                                 -->
+                <!-- 내가 리폼한 첫 기타 -->
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img src="2a.png" alt="2a img" width="100" height="100">
+                    </span>
+                    <h4 class="service-heading">DYNATONE - Chocolate</h4>
+                    <p class="text-muted">국산 DYNATONE사의 초콜릿 제품으로 입문용 기타로 내 첫 기타이다. 저렴하고 미니 사이즈이다. 15살때 리폼과제에서 얼룩소처럼 꾸몄던 기억이 있다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Guitar Intro</h2>
+                    <h3 class="section-subheading text-muted">궁금한 메뉴를 클릭해주세요.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/guitar-choisungwon/Type of Guitar.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>기타의 종류</h4>
+                        <p class="text-muted">Type of Guitar</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/guitar-choisungwon/Guitar State Law.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>다양한 주법</h4>
+                        <p class="text-muted">Guitar State Law</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/guitar-choisungwon/Guitar Supplies.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>기타의 용품들</h4>
+                        <p class="text-muted">Guitar Supplies</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/guitar-choisungwon/How to tune a Guitar.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>기타튜닝 방법</h4>
+                        <p class="text-muted">How to tune a Guitar</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/guitar-choisungwon/How to use an AMP and EQ.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>어쿠스틱 기타의 앰프, EQ 사용법</h4>
+                        <p class="text-muted">How to use an AMP and EQ</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/guitar-choisungwon/Guitar Beginner Song.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>기타 입문곡 추천</h4>
+                        <p class="text-muted">Guitar Beginner Song</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Step by Step</h2>
+                    <h3 class="section-subheading text-muted">Beginner's Stage</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/step-choisungwon/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step. 1</h4>
+                                    <h4 class="subheading">굳은살 만들기</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">기본코드인 C - Am - Dm - A7 으로 연습 !<br>
+                                                            코드를 잡아도 손가락이 안아플 때까지<br>
+                                                            연습하기.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/step-choisungwon/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step. 2</h4>
+                                    <h4 class="subheading">스무스하게</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">막 쳐보면서 버벅거리지 않고<br>
+                                                            코드변환이 자연스러울 때까지<br>
+                                                            연습하기.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/step-choisungwon/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step. 3</h4>
+                                    <h4 class="subheading">깨끗한 소리</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">돌처럼 틱 걸리는 소리없이<br>
+                                                            맑고 이쁜소리가 나올 때까지<br>
+                                                            연습하기.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/step-choisungwon/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Step. 4</h4>
+                                    <h4 class="subheading">다양한 주법 터득</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">다양한 주법을 배워서 스트로크 뿐만이 아닌<br>
+                                                            아르페지오, 핑거스타일, 태핑 등등<br>
+                                                            표현할 수 있는 음악의 범위<br>
+                                                            넓히기.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Guitar<br>
+                                    중급자로<br>
+                                    도 약 !</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Korea Guitarist</h2>
+                    <h3 class="section-subheading text-muted">내가 뽑은 3대 한국 기타리스트</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/Guitarist-choisungwon/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>정성하 - 96년생</h4>
+                        <p class="text-muted">대한민국의 기타리스트이자<br>
+                                                구독자 668만 명을 보유한 유튜버이다.<br>
+                                                핑거스타일 주법의 천재다.</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/jungsungha" id="sw1"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/SUNGHAJUNGMUSIC" id="sw2"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/theofficialsunghajung/" id="sw3"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/user/jwcfree" id="sw4"><div id="sw5">▶</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/Guitarist-choisungwon/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>적 재 - 89년생</h4>
+                        <p class="text-muted">대한민국의 기타리스트이자 싱어송라이터<br>
+                                                수많은 유명 가수들의 기타 세션 활동 및 음악 편곡을 했다.<br>
+                                                본명은 적재가 아닌 정재원이다.</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/hashtag/%EC%A0%81%EC%9E%AC" id="sw1"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/jukjaeofficial" id="sw2"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/jungjukjae/?igshid=1dytu4hcnyq91" id="sw3"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/c/jukjaeofficial" id="sw4"><div id="sw5">▶</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/Guitarist-choisungwon/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>김태원 - 65년생</h4>
+                        <p class="text-muted">대한민국의 음악 그룹 부활의 리더이자<br>
+                                                기타리스트, 프로듀서, 작사가, 작곡가<br>
+                                                부활 대부분의 곡을 직접 작사·작곡한 히트메이커이다.</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/paulkimmarcome" id="sw1"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://namu.wiki/w/%EA%B9%80%ED%83%9C%EC%9B%90(%EC%9D%8C%EC%95%85%EC%9D%B8)" id="sw2"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/boohwal_official/?hl=ko" id="sw3"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/channel/UC2aMxQN1ufDytsl6c-keLhA" id="sw4"><div id="sw5">▶</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">적재 : 팬 Twitter로 대체<br>
+                                                김태원 : Twitter 해킹당한 것 같음 & Facebook 계정이 없어 나무위키로 대체</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://lms.doowon.ac.kr/" id="color1"></a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://www.google.co.kr/" id="color2"></a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://www.youtube.com/" id="color3"></a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="https://www.youtube.com/user/GrabTheGT" id="color4"></a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">궁금한 사항 및 건의사항이 있으면 문의 부탁드립니다.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2021</span>
+                    <hr>
+                            <span>&nbsp;&nbsp;&nbsp;대한민국 / </span> 
+                            <span>                  은평구 서울특별시 - IP 주소에서 가져옴 / </span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li>My YouTube</li>  
+                        <li><a href="https://www.youtube.com/" id="sw4"><div id="sw5">▶</div></a>
+                        </li>
+                    </ul>
+                    <hr>
+                            <span>&nbsp;&nbsp;&nbsp;도움말 / </span>
+                            <span>                  의견 보내기 / </span>
+                            <span>                  개인정보처리방침 / </span> 
+                            <span>                  약관 / </span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                    <hr>
+                    <span>&nbsp;&nbsp;&copy;DOOWON </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="sung">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>다양한 기타의 종류</h2>
+                                <p class="item-intro text-muted">크게 &nbsp;5가지로 분류</p>
+                                <img class="img-responsive img-centered" src="img/guitar-choisungwon/Type of Guitar-a.jpg" alt="">
+                                <details id="wrap">
+                                <summary>▶기타 종류 설명보기</summary>    
+                                <p id="choi">1. 우리가 흔히 알고있는 통기타이다. 쇠줄을 사용한다.<br><br>
+                                    2. 어쿠스틱 기타다. 같은 통기타로 eq가 장착되어 있어 앰프사용이 가능한 공연연주용 기타라고 생각하면 된다.<br><br>
+                                    3. 클래식 기타다. 통기타에 비해 지판이 넓으며 쇠줄이 아닌 나일론 줄을 사용한다.<br><br>
+                                    4. 우쿨렐레 기타다. 굉작히 작은 사이즈에 4현을 사용하고(6현도 있음) 까랑까랑한 소리가 특징이다.<br><br>
+                                    5. 일렉 기타다. 평소엔 소리가 잘 안나고 앰프를 사용하여 고음의 찌르는듯한 소리가 특징이다.</p>
+                                    <strong>크게 5가지로 분류를 한 것이고 이 외에 기타의 몸통, 바디부분도 모양이 제각각이다.<br>
+                                            1 ~ 2번 사진처럼 컷어웨이라는 한쪽 몸통이 파인 형태가 있는데 하이플렛을 잡기 편한 장점이 있다.</strong>
+                                </details>           
+                                <ul class="list-inline">
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="sung">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>다양한 기타의 주법</h2>
+                                <p class="item-intro text-muted">스트로크 / 아르페지오 / 핑거스타일 / 태핑</p>
+                                <iframe width="701" height="225" src="https://www.youtube.com/embed/REpv_eTxldQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <iframe width="701" height="225" src="https://www.youtube.com/embed/DCN7uMl04Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <iframe width="701" height="225" src="https://www.youtube.com/embed/C7SU48fUhFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br>
+                                <iframe width="701" height="225" src="https://www.youtube.com/embed/ngAGiOoW7yY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <details id="wrap">
+                                <summary>▶기타 주법 설명보기</summary>
+                                <p id="choi">
+                                            1. 스트로크 주법이다. 손톱, 피크를 사용하여 코드를 잡고 내려치거나 올려친다. 노래를 부르며 반주에 많이 쓰인다.<br><br>
+                                            2. 아르페지오 주법이다. 손가락으로 6현을 각각 튕겨서 멜로디 라인의 소리가 비중이 높다.<br><br>
+                                            3. 핑거스타일 주법이다. 1 ~ 2번 주법을 섞어서 다양한 악기 소리를 내며 반주와 멜로디를 둘다 잡는 주법이다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 중간중간 퍼커시브로 리듬감을 살리는게 특징이다.<br><br>
+                                            4. 태핑 주법이다. 음을 낮게 튜닝하고 기타의 지판과 바디(몸통)를 때린다. 현악기가 타악기가 되버리는 주법이다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 영상에는 베이스에 쓰이는 슬랩 기술도 들어가있다.                </p>
+                                        <strong>한 개의 주법만으로 치는것이 아닌 한 곡에 여러가지 주법을 활용하면<br>
+                                                보다 개성있고 흥미롭게 기타를 즐길 수 있다. </strong>
+                                </details>
+                                    <ul class="list-inline">
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+                                    </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="sung">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>다양한 기타의 용품</h2>
+                                <p class="item-intro text-muted">피크 / 스트링 / 카포 / 튜너, 피크가드, 스트랩</p>
+                                <img class="img-responsive img-centered" src="img/guitar-choisungwon/Guitar Supplies-c.jpg" alt="">
+                                <details id="wrap">
+                                <summary>▶기타 용품 설명보기</summary>
+                                <p id="choi">1. 피크는 얇을수록 유연하고 탄성이 좋아 탄현시 상당히 경쾌하다. 두꺼우면 뻣뻣해져서 둔탁하게 맞는 느낌이 있지만 <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;힘을 온전히 기타 줄에 전달할 수 있어서 탄현의 세기를 더 섬세하게 조절할 수 있고, 뻗는 힘이 좋다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;이 외에 손톱이 없거나 손톱을 기르지 못한다면 엄지에 끼는 썸피크와 손가락에 끼는 핑거피크가 있다.<br><br>
+                                            2. 기타줄은 공기중에 노출이 되어있고, 땀 때문에 구리등과 같은 금속이 녹이 슨다. 이를 예방하기 위해<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 줄에 코팅이 되있는(엘릭서, 다다리오 EXP, 마틴 LIFESPAN)등이 있고, 대신 엄청 비싸다...(저는 엘릭서를 씁니다)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 줄의 굵기가 얇을수록 -> 장력 감소 및 소리가 가벼워지고 / 줄의 굵기가 굵을수록 -> 장력 증가 및 소리가 묵직해진다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 요즘엔 좀더 풍부한 울림과 따뜻한 소리가 인기를 끌면서 (구리 92%+주석/인 8%) PHOSPHOR BRONZE 를 애용한다.<br><br>
+                                            3. 카포는 기타의 플렛옆에 거는데 한 칸당 전체적으로 반음씩 음이 올라간다. 방식이 많은데 3가지를 설명하겠다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; ① 가장 기본적인 스프링 방식의 카포이며 장점으로는 사용하기 매우 편리하지만<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 단점은 헐거워져 줄을 꽉잡지 못하는 날이 온다는 것과 기계적으로 조이는 정도를 조절할 수 없는점이다.<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; ② 글라이더라는 특수 카포인데 가끔 2플렛에서 끼고 치다가 중간에 곡을 반음 높여서 쳐야 하는 경우가 있다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이럴 때 재빨리 2플랫에서 3플랫으로 카포를 옮겨야 하는데 물리적으로 불가능하기 때문에 개발된 카포이다.<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; ③ Alternative Tuning Capo 라고 하는데 부분 카포이다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 일반적으로 카포는 모든 줄을 한번에 잡지만, 이 카포는 부분적으로 원하는 줄만 잡을 수 있다.<br><br>
+                                            4. 각 현의 음을 조정하는 튜닝기와 / 피크사용시 기스를 예방하는 피크가드,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 서서 기타를 연주할 수 있게 기타에 연결해서 목에 거는 스트랩이 있다.</p>
+                        <strong>기타 용품은 이 외에도 엄청나게 많으니 나중에 더 업데이트를 해서 정보를 공유하겠다.<br>
+                            기타 튜닝에 대해서는 따로 새 페이지에서 다룰 예정이다.</strong>
+                            </details>
+                <ul class="list-inline">
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="sung">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>기타튜닝 방법</h2>
+                                <p class="item-intro text-muted">튜닝기가 있을 때&nbsp; / 없을 때</p>
+                                <img class="img-responsive img-centered" src="img/guitar-choisungwon/How to tune a Guitar-d.jpg" alt="">
+                                <details id="wrap">
+                                <summary>▶튜닝방법 설명보기</summary>
+                                <p id="choi">1. 주파수 440Hz 설정(국제표준 A(라)에 해당하는 음의 주파수) - 플렛이나 샾의 표시가 없어야함 -<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;G(기타모드)로 되어 있어야함 - 셋팅된 튜닝기를 기타헤드에 잘 보이는 각도로 꽂아준다.<br><br>
+                                            2. 6번줄을 칠때 다른줄이 흔들려 잡음이 나지 않도록 한다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;대부분 진동식 튜너이기에 6번줄이 진동하면서 다른줄도 미세하게 진동을 전달하여 울리게 하므로<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;1~5번줄을 살짝 잡아 뮤트시킨다.<br><br>
+                                            3. 튜닝기를 보면서 조율하는데 6,5,4번 줄은 시계반대방향으로 감으면 음이 올라가고<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;3,2,1번 줄은 시계방향으로 감아야 음이 올라간다. 중요하다!! EADGBE로 맞춰보자.</p>
+                                </details>
+                        <video width="580" height="320" controls>
+                            <source src="guitarTune.mp4" type="video/mp4">
+                        </video>
+                                <details id="wrap">
+                                <summary>▶튜닝방법 설명보기</summary>
+                                <p>
+                                    6번줄 5번 플렛을 누르면 "A(라)"음이 난다, 그 음을 듣고 5번줄 개방현 "A(라)"음 조율.<br>
+                                    5번줄 5번 플렛을 누르면 "D(레)"음이 난다. 그 음을 듣고 4번줄 개방현 "D( 레)"음 조율.<br>
+                                    4번줄 5번 플렛을 누르면 "솔(G)"음이 난다. 그 음을 듣고 3번줄 개방현 "솔(G)"음 조율.<br>
+                                    3번줄 4번 플렛을 누르면 "시(B)"음이 난다. 그 음을 듣고 2번줄 개방현 "시(B)"음 조율.<br>
+                                    2번줄 5번 플렛을 누르면 "미(E)"음이 난다. 그 음을 듣고 1번줄 개방현 "미(E)"음 조율.<br><br>
+                                    2번줄을 조율할 때는 3번줄 4번 플렛을 눌러야 한다. 중요하다!!</p>
+
+                        <strong>A-A#-B-C-C#-D-D#-E-F-F#-G-G#-A-A#-B-C-C#-D-D#-E-F-F#-G-G#<br>
+        &lt;- 순으로 음이 낮고&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;순으로 음이 높다 -&gt;</strong>
+                                </details>
+                <ul class="list-inline">
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+                </ul>    
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="sung">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>앰프와 EQ / 기능과 용어</h2>
+                                <p class="item-intro text-muted">통기타 픽업에서 사용하는 일반적인 용어</p>
+                                <img class="img-responsive img-centered" src="img/guitar-choisungwon/How to use an AMP and EQ-e.jpg" alt="">
+                                <details id="wrap">
+                                <summary>▶앰프, EQ 설명보기</summary>
+                                <h4 id="red">Gain</h4>
+                                <p id="choi"> ‘게인은 입력’&nbsp;에 관한 것,&nbsp; ‘볼륨은 출력’&nbsp;에 관한 것!&nbsp;<br>
+                                    게인을 높이면 입력신호를 증폭하는 것이므로 왜곡이나 노이즈가 함께 증폭될 수 있다.<br>
+                                    사운드를 크게 해야하는 상황이 아니라면 당연히 게인은 낮을수록 좋다.<br>
+                                    게인을 적당히 낮추고 볼륨을 70~80% 정도로 유지하는 것이 좋다.</p>
+                                <h4 id="orange">Brilliance</h4>
+                                <p id="choi">음색의 명도를 조정한다.&nbsp; 쉽게 풀어 설명하면 음색의 밝기를 조정한다.<br>
+                                    +부분은 음색이 좀 더 밝게 표현되고,&nbsp; -부분은 음색이 좀 더 어둡게 표현된다.<br>
+                                    일반적으로 브릴리언스에서는 주파수의 높은 성분(고음역대)을 조정하는 경우가 많다.</p>
+                                <h4 id="yellow">Presence</h4>
+                                <p id="choi">현장감 혹은 공간감이라고 표현할 수 있다. (라이브의 느낌을 주는것)<br>
+                                    반향음 이라고해서 반사되는 음까지 듣는 느낌을 말하는데<br>
+                                    너무 과하게 반향음을 주게되면 오히려 현장감이 사라지는 느낌을 받을 수 있다.</p>
+                                <h4 id="green">Notch</h4>
+                                <p id="choi">피드백을 줄여줄 수 있는 기능이다. (피드백은 하울링과 같은 개념)<br>
+                                    하울링은 기타를 쳐서 그 소리가 스피커를 통해 나갔는데<br>
+                                    그 소리가 다시 기타의 픽업으로 들어와서 또 스피커를 통해나가서<br>
+                                    점점 소리가 피드백 되어서 증폭되어서 생기는 고음의 소음을 말한다.<br>
+                                    Notch는 피드백이 일어나는 시점에서 조금씩 조절을 하면 피드백이 현저히 줄어드는 지점이 있다.<br>
+                                    그 대역으로 맞춰서 사용하면 되고,&nbsp; 연주 전 체크하면 좋다.</p>
+                                <h4 id="blue">Phase</h4>
+                                <p id="choi">페이즈는 음의 주파수 곡선을 역으로 바꿔준다.<br>
+                                    소리는 파형을 그리는데 이 페이즈는 그 파형을 반대로 만들어준다.<br>
+                                    이걸 사용하는 이유는 여러 악기나 밴드가 연주할 때 소리의 파형이 겹치면서<br>
+                                    왜곡되거나 묻히는 일이 생길 수 있는데 그럴 때 사용하면 된다.<br>
+                                    또 하울링이 생길 때도 조금의 효과를 볼 수 있다.</p>
+                                <h4 id="pink">Treble / Middle / Bass</h4>
+                                <p id="choi">고음역대를 조절 / 중음역대를 조절 / 저음역대를 조절<br>
+                                    Treble을 조절하면 시원한 느낌을 표현하고 카랑카랑한 소리를 표현하고자 할 때 조절한다.<br>
+                                    Middle을 조절하면 소리의 골격에 해당하는 중요한 대역으로 보통 소리의 깊은 맛, 실제감에 영향을 준다.<br>
+                                    Bass을 조절하면 소리의 따뜻한 느낌, 혹은 묵직한 느낌을 표현할 수 있는 부분이다.<br>
+                                    너무 과하게 베이스를 올리면 고음, 중음이 묻혀서 답답한 느낌이 날 수 있다.</p>
+                        <strong>이 외에는 글로 설명하기 애매해서<br>
+                                직접 사용해 보면서 감을 익히는게 도움이 될 것 같다.</strong>
+                                </details>
+                <ul class="list-inline">
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+                </ul>    
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="sung">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>기타 입문곡 추천</h2>
+                                <p class="item-intro text-muted">입문자들을 위한 대표곡&nbsp;&nbsp; 3가지</p>
+                                <iframe width="701" height="280" src="https://www.youtube.com/embed/gGt0akED_UU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <details id="wrap">
+                                <summary>▶악보다운 및 설명보기</summary>
+                                <p id="choi">Let it be 렛잇비 - Beatles  (난이도 ★)<br>
+                                    &nbsp;&nbsp;G, D, Em, C 마법의 네가지 코드만 알면 연주가능한 곡이다.<br> 
+                                    &nbsp;&nbsp;&nbsp;&gt; 기타 처음 치시는 분들은 2~3주 만에 매끄럽게 연주 가능<br>
+                                    &nbsp;&nbsp;&nbsp;&gt; 몇곡 쳐본 분들은 1일 만에 가능------------------------------------------------------------------------------
+                                    <a href="song_choisungwon/Let_it_be 악보.jpg" id="guitarlink" download="Let_it_be 악보.jpg">악보 다운로드</a></p>
+                                </details>
+                                <iframe width="701" height="280" src="https://www.youtube.com/embed/siwizefmUf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <details id="wrap">
+                                <summary>▶악보다운 및 설명보기</summary>
+                                <p id="choi">Falling Slowly ('Once' OST) - Glen Hansard, Marketa Irglova (난이도 ★★)<br>
+                                    &nbsp;&nbsp;아르페지오와 스트로크 주법이 같이 사용된다.<br>
+                                    &nbsp;&nbsp;&nbsp;&gt; 응용코드 때문에 다소 어렵게 느껴질 수 있다.<br>
+                                    &nbsp;&nbsp;&nbsp;&gt; 워낙 유명한 곡이니 차근차근 연습해서 마스터 하자.-------------------------------------------------------
+                                    <a href="song_choisungwon/Falling_Slowly 악보.pdf" id="guitarlink" download="Falling_Slowly 악보.pdf">악보 다운로드</a></p>
+                                </details>
+                                <iframe width="701" height="280" src="https://youtu.be/Qbv2vOX71hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <details id="wrap">
+                                <summary>▶악보다운 및 설명보기</summary>
+                                <p id="choi">Twilight 황혼 - Kotaro Oshio (난이도 ★★★)<br>
+                                    &nbsp;&nbsp;아르페지오 위주의 매우 유명하고 대표적인 핑거스타일 입문곡이다.<br>
+                                    &nbsp;&nbsp;&nbsp;&gt; 종소리를 내는 하모닉스라는 기술이 필요하다.<br>
+                                    &nbsp;&nbsp;&nbsp;&gt; 고수들도 완벽하고 깔끔하게 치기 어려운 곡이다.-----------------------------------------------------------
+                                    <a href="song_choisungwon/Twilight 악보.pdf" id="guitarlink" download="Twilight 악보.pdf">악보 다운로드</a></p>
+                            <strong>남들한테 들려주는 재미가 있으니<br>
+                                    얼른 연습해서 자랑하자.</strong>
+                                </details>
+                <ul class="list-inline">
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+&nbsp;&nbsp;&nbsp;
+<li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li><li class="rp">♡</li><li class="rp">♥</li>
+                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
